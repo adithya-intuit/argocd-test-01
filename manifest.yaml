@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logspammer
+  labels:
+    app: logspammer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logspammer
+  template:
+    metadata:
+      labels:
+        app: logspammer
+    spec:
+      containers:
+      - name: logspammer
+        image: cryptotuga/log-spammer:latest
