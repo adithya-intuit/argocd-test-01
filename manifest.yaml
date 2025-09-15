@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: logspammer
-        image: cryptotuga/log-spammer:latest
+        image: cryptotuga/log-spammer:latest1
